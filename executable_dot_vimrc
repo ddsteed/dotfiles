@@ -1,0 +1,72 @@
+" plugin install
+" use :PlugInstall to install
+" use :PlugUpdate  to update
+
+call plug#begin('~/.vim/plugged')
+  Plug 'joshdick/onedark.vim'
+  Plug 'https://github.com/posva/vim-vue'
+  Plug 'godlygeek/tabular'
+  Plug 'plasticboy/vim-markdown'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'https://github.com/neoclide/vim-jsx-improve'
+  Plug 'https://github.com/sonph/onehalf'
+  Plug 'preservim/NERDTree'
+  Plug 'vim-airline/vim-airline'
+  Plug 'https://github.com/ap/vim-css-color'
+call plug#end()
+syntax enable
+
+" set 
+set fileencodings=en_US.UTF-8,utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set termguicolors " 真彩色
+set encoding=utf-8
+set nocompatible " 关闭 vi 兼容模式
+syntax on " 自动语法高亮
+set ruler " 打开状态栏标尺
+set smartindent  
+set tabstop=2  
+set shiftwidth=2  
+set expandtab  
+set softtabstop=2 
+
+" 允许折叠功能存在，但默认全部展开
+set foldlevelstart=99
+
+set ignorecase  " 忽略大小写的搜索
+" set hlsearch    " 高亮显示搜索结果
+set incsearch   " 逐步搜索模式
+"set nowrap      " 不自动折行
+
+" set cursorline " 突出显示当前行
+set cursorline 
+hi CursorLine   cterm=NONE ctermbg=DarkGray
+hi CursorColumn cterm=NONE ctermbg=brown
+"
+" 设置vim 在 iterm 中的光标
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+
+" ---------- Insert 模式 ----------
+" 用 jk 退出 Insert
+inoremap jk <Esc>
+
+" Insert 模式禁用 Esc
+inoremap <Esc> <Nop>
+
+" ---------- Normal 模式 ----------
+" Esc 只负责清除搜索高亮（保留少量功能）
+nnoremap <Esc> :nohlsearch<CR>
+
+
+" ------ set color theme placed under ./vim/colors/
+" - dark
+" set background=dark
+" colorscheme onedark
+" - dracula
+"packadd! dracula
+"syntax enable
+"colorscheme dracula
+"color palenight-theme

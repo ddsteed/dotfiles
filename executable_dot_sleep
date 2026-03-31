@@ -1,0 +1,11 @@
+#- bluetooth
+export BLUEUTIL_ALLOW_ROOT=1
+
+echo `date` Disable WLAN...
+networksetup -setairportpower en0 off
+
+echo `date` Disable Bluetooth...
+/usr/local/bin/blueutil -p off
+
+#- Squirrel
+/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --sync

@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 e1aef0fb5d022942e99407e4ca6698deded4946f ddsteed <ddsteed@gmail.com> 1732246183 +0800	commit (initial): create RDS karabiner config
+e1aef0fb5d022942e99407e4ca6698deded4946f 4671e1fa655a9a7a6f1bc12c637cba047ff7917e ddsteed <ddsteed@gmail.com> 1733884135 +0800	commit: add full vim-motion except Emacs
+4671e1fa655a9a7a6f1bc12c637cba047ff7917e 2b269eb6c58e1b2c07f5e5198173851a280ced54 ddsteed <ddsteed@gmail.com> 1733884709 +0800	commit: update on Wed Dec 11 10:38:29 CST 2024
+2b269eb6c58e1b2c07f5e5198173851a280ced54 12fbb1967cb10e68ea11cb62f1ec76b59bb1d152 ddsteed <ddsteed@gmail.com> 1733886035 +0800	commit: delete notifications for vim mode
+12fbb1967cb10e68ea11cb62f1ec76b59bb1d152 e78ff922f76d4765b35fca9aab15f2290595be21 ddsteed <ddsteed@gmail.com> 1733886459 +0800	commit: clean up
+e78ff922f76d4765b35fca9aab15f2290595be21 4c9d31d1219422a99687ed7869a0207c4726dd09 ddsteed <ddsteed@gmail.com> 1733886919 +0800	commit: exclude vim for Safari
+4c9d31d1219422a99687ed7869a0207c4726dd09 c6b1e7514c22940672a7d1bbe7fecedb85fd5e47 ddsteed <ddsteed@gmail.com> 1733887781 +0800	commit: exclude vim for Alfred
+c6b1e7514c22940672a7d1bbe7fecedb85fd5e47 9f49bfe8425462f21d89a2ed227ac8dcdea80fc5 ddsteed <ddsteed@gmail.com> 1733916616 +0800	commit: exclude vim for Alfred
+9f49bfe8425462f21d89a2ed227ac8dcdea80fc5 0cef565094ff4f448c92bed484207d77e7e5501e ddsteed <ddsteed@gmail.com> 1733993690 +0800	commit: abandon vim full mode

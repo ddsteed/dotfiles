@@ -1,0 +1,8 @@
+export BLUEUTIL_ALLOW_ROOT=1
+
+echo `date` Enable Bluetooth...
+/usr/local/bin/blueutil -p on
+
+echo `date` Enable WLAN...
+networksetup -setairportpower en0 on
+
